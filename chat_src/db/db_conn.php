@@ -1,8 +1,8 @@
 <?php
-    $hostname = "localhost";
-    $username = "moodle";
-    $pwd = "Moodle@123";
-    $db = "chat";
+    $hostname = "<host_name>";
+    $username = "<user_name>";
+    $pwd = "<password>";
+    $db = "<db>";
 
     $conn = mysqli_connect($hostname, $username, $pwd, $db);
     

@@ -134,8 +134,7 @@
 			dataType: 'text',
 			crossDomain: true,
 			success: function(data){
-			console.log(data);
-			console.log(last_message);
+			console.log("Predicted Sentiment for Last Message "+ last_message + " is "+ data);
 			$("#sentiment").empty();
 			$("#sentiment").append(data);
 		}

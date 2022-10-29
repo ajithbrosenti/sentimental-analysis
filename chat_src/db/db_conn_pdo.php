@@ -1,8 +1,8 @@
 <?php
-	$host = 'localhost';
-	$db = 'chat';
-	$username = 'moodle';
-	$pwd = 'Moodle@123';
+	$host = '<host_name>';
+	$db = '<database_name>';
+	$username = '<user_name>';
+	$pwd = '<password>';
 	$dns = "mysql:host=$host;dbname=$db";
 	
 	try {
