@@ -127,14 +127,16 @@
 			
 			}
 		});
-		final_url = 'http://'+ip+':4000/'+last_message;
+		final_url = 'http://'+ip+':4000/';
 		$.ajax({
 			url: final_url,
 			type: 'GET',
 			dataType: 'text',
 			crossDomain: true,
+			data: {'message':last_message},
+			contentType: 'text/json',
 			success: function(data){
-			console.log("Predicted Sentiment for Last Message "+ last_message + " is "+ data);
+			console.log("Predicted Sentiment for Last Message "+ last_message+" is "+ data);
 			$("#sentiment").empty();
 			$("#sentiment").append(data);
 		}
