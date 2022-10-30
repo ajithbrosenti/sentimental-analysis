@@ -135,15 +135,15 @@ def emotion(text):
     model = joblib.load("lrmodel.pkl")
     prediction = model.predict(transformed_text)
     if prediction == 0:
-        return "Prediction is sad"
+        return "Sentiment is sad"
     elif prediction == 1:
-        return "Predication is joy"
+        return "Sentiment is joy"
     elif prediction == 2:
-        return "Predication is love"
+        return "Sentiment is love"
     elif prediction == 3:
-        return "Predication is anger"
+        return "Sentiment is anger"
     elif prediction == 4:
-        return "Predication is fear"
+        return "Sentiment is fear"
     elif prediction == 5:
-        return "Predication is surprise"
+        return "Sentiment is surprise"
 
