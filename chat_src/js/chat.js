@@ -62,7 +62,7 @@
 		}
 		
 		document.getElementById('send_button').setAttribute('onclick','sendmsg('+receiver_id+')');
-		
+		var msg = "";
 		datatosend = 'rid='+receiver_id;
 		$.ajax({
 			url: 'oldmsg.php',
@@ -103,7 +103,7 @@
 	
 	function newmsg(receiver_id) {
 		var datatosend = 'rid='+receiver_id;
-		msg = "";
+		var msg = "";
 		var ip = location.host;
 		$.ajax({
 			url: 'newmsg.php',
